@@ -1,9 +1,11 @@
 \documentclass{standalone}
 \usepackage{genealogytree}
 
+\gtruselibrary{templates}
+
 \begin{document}
 
-\begin{genealogypicture}
+\begin{genealogypicture}[template=signpost]
 sandclock{%
     c[male]{Andrés Vázquez}
     c[female]{Marciala Siria Vázquez $\dagger$}
@@ -35,7 +37,7 @@ sandclock{%
             child{%
                 g[male]{Eduardo Álvarez}
                 p[female]{Elena Ligrone}
-                c[female]{Germán Álvarez}
+                c[male]{Germán Álvarez}
             }
         }
         child{%
@@ -73,7 +75,7 @@ sandclock{%
     c[female]{Marcelina Isabel Vázquez}
     c[female]{Antonia Vázquez $\dagger$}
     c[male]{Pedro Vázquez $\times$}
-    c[female]{Eulogia Ema Vázquez}
+    c[female]{Eulogia Ema Vázquez $\dagger$}
     c[male]{Plácido Ernesto Vázquez}
     child{%
         g[female]{Lázara Siria Vázquez}
@@ -95,6 +97,7 @@ sandclock{%
                 p[female]{Ma.\ Teresa Zuluaga}
                 c[female]{María Eugenia Ferrari}
             }
+            c[female]{Ma.\ del Rosario Ferrari}
         }
         child{%
             g[male]{Luis Gustavo Vázquez}
